@@ -1,0 +1,227 @@
+:root {
+  --background-color: #bcd5f4;   /* Light theme background */
+  --text-color: red;             /* Light theme text */
+  --table-bg-color: #95a7ff;     /* Light theme table header background */
+  --table-text-color: white;     /* Light theme table header text */
+  --table-row-even-bg: #c9f1ff;  /* Light theme table even row background */
+  --table-row-odd-bg: #fffac9;   /* Light theme table odd row background */
+  --table-row-text: black;       /* Light theme table row text */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #2f2f2f;    /* Dark theme background (dark ash/grey) */
+    --text-color: yellow;           /* Dark theme text */
+    --table-bg-color: #95a7ff;     /* Light theme table header background */
+    --table-text-color: white;     /* Light theme table header text */
+    --table-row-even-bg: #c9f1ff;  /* Light theme table even row background */
+    --table-row-odd-bg: #fffac9;   /* Light theme table odd row background */
+    --table-row-text: black;      /* Dark theme table row text */
+  }
+}
+
+body {
+  font-family: 'Calibri', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 100% of the viewport height */
+  width: 100vw;  /* 100% of the viewport width */
+}
+
+div#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stButton>button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: large;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.stButton>button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.css-1d391kg {
+  background-color: black;
+  font-size: 24px; /* Ensure sidebar font size matches the rest */
+}
+
+.css-1d391kg .css-1aumxhk, .css-1d391kg .css-1aumxhk:visited {
+  color: white;
+}
+
+.css-1d391kg .css-1aumxhk:hover, .css-1d391kg .css-1aumxhk:focus {
+  color: #4ee053;
+}
+
+.css-1d391kg .stSlider .stSliderLabel {
+  color: white;
+}
+
+.css-1d391kg .css-1aumxhk {
+  font-size: 2em; /* Adjust the size to match st.title */
+  font-weight: bold; /* Ensure it matches the styling of st.title */
+}
+
+.data-table-wrapper {
+  overflow-x: auto;
+  max-height: 500px; /* Fixed height for scrollability */
+}
+
+.data-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 20px;
+  font-family: 'Calibri';
+}
+
+.data-table th, .data-table td {
+  text-align: left;
+  padding: 8px;
+}
+
+.data-table th {
+  background-color: var(--table-bg-color);
+  color: var(--table-text-color);
+}
+
+.data-table tr:nth-child(even) {
+  background-color: var(--table-row-even-bg);
+  color: var(--table-row-text);
+}
+
+.data-table tr:nth-child(odd) {
+  background-color: var(--table-row-odd-bg);
+  color: var(--table-row-text);
+}
+
+.donut-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.stPlotlyChart {
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-chart {
+  margin-top: 50px;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+.stApp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.stColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .stColumn {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .stMetric {
+    width: 100%;
+  }
+}
+
+.stMetric .css-1ht1j8u {
+  text-align: center;
+}
+
+.css-1ht1j8u, .css-1d391kg, .css-1cpxqw2 {
+  justify-content: center;
+  align-items: center;
+}
+
+.css-1d391kg {
+  flex: 1;
+}
+
+.stMetric {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.stMetric>div {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.css-17eq0hr {
+  font-weight: bold;
+}
+
+.css-1oe6wy4 {
+  margin-bottom: 0;
+}
+
+.css-1aumxhk, .css-1aumxhk:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.css-1aumxhk:hover, .css-1aumxhk:focus {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
